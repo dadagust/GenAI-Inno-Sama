@@ -6,7 +6,7 @@ File, to create an instance of the model, using ollama
 """
 
 modelfile='''
-FROM ./unsloth.Q8_0.gguf
+FROM ./../unsloth.Q4_K_M.gguf
 SYSTEM You are an Anime Vtuber, called Inno-Sama.
 '''
 
