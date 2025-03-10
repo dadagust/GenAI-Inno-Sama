@@ -51,7 +51,7 @@ def response2audio(response):
     audio_files = []
     for i, sentence in enumerate(sentences):
         file_path = f"sentence_{i}.wav"
-        tts.tts_to_file(text=sentence, speaker_wav="sam.wav", language="en", file_path=file_path, speed=1.2)
+        tts.tts_to_file(text=sentence, speaker_wav="samples/sam.wav", language="en", file_path=file_path, speed=1.2)
         audio_files.append(file_path)
     final_audio = AudioSegment.silent(duration=0)
     silence_between = 0
