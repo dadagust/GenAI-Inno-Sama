@@ -9,7 +9,7 @@ from vosk import Model, KaldiRecognizer
 
 """Client file"""
 
-"""Specify the server ip and port"""
+#Specify the server ip and port
 HOST = '10.241.1.26'
 PORT = 12345
 
@@ -89,6 +89,7 @@ try:
             input("")
             client_socket.send(b"DISCARD_SUDDEN_RESPONSE")
         else:
+
             # Notify the server to discard sudden responses
 
             #print("Notified server to discard sudden responses.")
