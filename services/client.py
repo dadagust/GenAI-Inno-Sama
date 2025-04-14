@@ -9,14 +9,14 @@ from vosk import Model, KaldiRecognizer
 
 """Client file"""
 
-#Specify the server ip and port
-HOST = '10.241.1.26'
+#Specify the server ip and port 10.10.10.249
+HOST = '172.22.32.1'
 PORT = 12345
 
 pygame.mixer.init()
 
 English = True
-model_path = "vosk-model-en-us-0.42-gigaspeech" if English else "vosk-model-ru-0.42"
+model_path = "../vosk-model-en-us-0.42-gigaspeech" if English else "../vosk-model-ru-0.42"
 
 if not os.path.exists(model_path):
     print(f"{model_path} Not founded")
